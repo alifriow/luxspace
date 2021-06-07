@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss tailwind.css -o style.css -w --verbose"
+    "bangun": "postcss tailwind.css -o style.css -w --verbose"
   },
   "keywords": [],
   "author": "",

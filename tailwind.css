@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* menu */
+  .menu-hover {
+    @apply relative pb-0;
+  }
+
+  .menu-hover::after {
+    @apply absolute left-0 right-0 block bg-black transition-all duration-300;
+    height: 3px;
+    content: "";
+    transform-origin: 50% 0;
+    transform: scaleX(0);
+  }
+
+  .menu-hover:hover::after {
+    transform: scaleX(1);
+  }
+
+  /* header-hero */
+  .hero-image:hover .overlay {
+    @apply bg-black opacity-30 transform transition-all duration-150;
+  }
+  .hero-image img {
+    min-height: 90vh;
+  }
+  .section-hero .hero-text {
+    width: 100vw;
+  }
+  .btn-play {
+    @apply transform translate-y-1/2 -translate-x-1/4;
+    bottom: 0%;
+    right: 0%;
+  }
+  /* header-hero */
+
+  /* browse-room */
+  .browse-room .card:hover .overlay-room {
+    @apply bg-black opacity-20 transform transition-all duration-200;
+  }
+  /* browse-room */
+
+  .swiper-slide:last-child {
+    margin-right: 250px;
+  }
+
+  .add {
+    transform: rotate(180deg);
+  }
+
+  /* breadcumb */
+  .breadcrumb li:last-child a {
+    @apply font-semibold;
+  }
+
+  .breadcrumb li:not(:last-child) a {
+    @apply font-light;
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: "/";
+    @apply px-4;
+  }
+
+  /* input disabled */
+  button:disabled {
+    @apply bg-gray-300 hover:bg-gray-300 text-gray-400 hover:text-gray-400 cursor-not-allowed;
+  }
+
+  .modal {
+    @apply fixed z-50 inset-0 w-screen h-screen transition-all duration-200;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  iframe {
+    width: 400px;
+  }
+
+  /* single page */
+  .image-review {
+    @apply w-full h-full;
+  }
+
+  .swipperr.selected .overlay-swipper {
+    @apply bg-black opacity-40;
+  }
+  .swipperr.selected {
+    @apply border border-gray-300;
+  }
+}
+
+@screen md {
+  .index.menu-hover::after {
+    @apply bg-white;
+  }
+  .hero-image img {
+    min-height: 80vh;
+  }
+  .section-hero .hero-text {
+    width: auto;
+  }
+  .btn-play {
+    @apply transform -translate-y-1/2 translate-x-1/4;
+    top: 50%;
+    left: 50%;
+  }
+  .review img {
+    height: 580px;
+  }
+
+  .video {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .image-review {
+    @apply w-auto h-auto;
+  }
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxspace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="fixed w-full z-50 px-4" id="top-header">
+        <div class="container mx-auto py-3 md:py-0 flex items-center">
+            <nav class="flex items-center flex-grow">
+                <div class="w-40 flex items-center ">
+                    <a href="index.html">
+                        <img src="src/img/logo.png" alt="">
+                    </a>
+                </div>
+            </nav>
+
+            <div class="w-auto">
+                <ul id="menu" class="fixed inset-0 z-50 overflow-x-hidden bg-white md:bg-transparent flex flex-col transform duration-300 md:translate-x-0 translate-x-full transition-all md:visible 
+                    md:flex-row md:relative items-center justify-center md:opacity-100">
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all index menu-hover">
+                        <a href="#">Showcase</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all index menu-hover">
+                        <a href="#">Catalog</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all index menu-hover">
+                        <a href="#">Delivery</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all index menu-hover">
+                        <a href="#">Rewards</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-auto">
+                <ul class="flex items-center">
+                    <li class="block md:hidden">
+                        <button id="menu-toggler" class="relative z-50 flex items-center justify-center w-10 h-10">
+                            <img src="src/icon/humberger.svg" class="button-svg" alt="">
+                        </button>
+                    </li>
+                    <li class="ml-2 md:ml-5">
+                        <a href="cart-page.html" class="flex items-center justify-center w-10 h-10">
+                            <img src="src/icon/cart.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- section hero -->
+    <section class="section-hero grid md:grid-cols-2 w-full overflow x-hidden">
+        <div
+            class="hero-text absolute z-20 md:relative h-full py-8 md:max-w-md mx-auto flex flex-col items-center justify-center text-center ">
+            <h1 class="text-4xl font-semibold">The Room <br> You’ve Dreaming</h1>
+            <p class="text-lg mt-5">Kami menyediakan furniture berkelas yang <br class="block">
+                membuat ruangan terasa homey</p>
+            <a href="#browse-room"
+                class="mt-7 inline-block py-3 px-9 rounded-full bg-pinker text-lg font-semibold hover:text-pinker hover:bg-black transform transition-all">Explore
+                Now</a>
+        </div>
+        <div class="hero-image relative cursor-pointer">
+            <div class="overlay absolute inset-0 opacity-100 bg-transparent"></div>
+            <button
+                class="btn-play w-16 h-16 rounded-full cursor-pointer flex items-center justify-center absolute focus:outline-none bg-blue-200 z-20">
+                <img src="src/icon/play.svg" class="w-5 h-5">
+            </button>
+            <img src="src/img/hero.png" alt="" class="w-full h-full object-cover object-center">
+        </div>
+    </section>
+    <!-- section hero -->
+
+    <!-- modal -->
+    <div class="modal-video hidden items-center justify-center fixed inset-0 z-50 cursor-pointer">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZpTNNiLIuQc" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <!-- modal -->
+
+    <!-- section browse the room -->
+    <section class="browse-room px-4 py-20 md:py-28 bg-grayer min-h-screen" id="browse-room">
+        <div class="container mx-auto">
+            <div class="mb-7">
+                <h2 class="font-semibold text-2xl">Browse The Room <br>
+                    That We Designed For You</h2>
+            </div>
+            <div class="grid grid-rows-2 grid-cols-9 gap-4">
+                <!-- card-1 -->
+                <a href="single-page.html"
+                    class="card relative hover:shadow-lg rounded-2xl overflow-hidden col-span-9 md:col-span-4 md:row-start-1 h-44">
+                    <div class="overlay-room absolute inset-0 opacity-0 bg-transparent rounded-2xl"></div>
+                    <div class="absolute left-1/2 bottom-1/3 flex flex-col items-start justify-center ">
+                        <div class="text-left">
+                            <h4 class="font-semibold text-xl">Living Room</h4>
+                            <p class="text-sm">18,309 items</p>
+                        </div>
+                    </div>
+                    <img src="src/img/room-1.png" alt="room-1" class="w-full h-full object-cover object-center">
+                </a>
+                <!-- card-1 -->
+
+                <!-- card-2 -->
+                <a href=""
+                    class="card relative hover:shadow-lg rounded-2xl overflow-hidden col-span-9 md:col-span-4 md:row-start-2 h-44">
+                    <div class="overlay-room absolute inset-0 opacity-0 bg-transparent rounded-2xl"></div>
+                    <div class="absolute left-1/2 bottom-1/3 flex flex-col items-start justify-center ">
+                        <div class="text-left">
+                            <h4 class="font-semibold text-xl">Childen Room</h4>
+                            <p class="text-sm">837 items</p>
+                        </div>
+                    </div>
+                    <img src="src/img/room-2.png" alt="room-2" class="w-full h-full object-cover object-center">
+                </a>
+                <!-- card-2 -->
+
+                <!-- card-3 -->
+                <a href=""
+                    class="card relative hover:shadow-lg rounded-2xl overflow-hidden col-span-9 h-44 md:h-auto md:col-span-2 md:row-span-2">
+                    <div class="overlay-room absolute inset-0 opacity-0 bg-transparent rounded-2xl"></div>
+                    <div
+                        class="absolute left-1/2 bottom-1/3 md:left-0 md:top-0 md:pl-8 md:pt-8 flex flex-col items-start justify-center md:justify-start ">
+                        <div class="text-left">
+                            <h4 class="font-semibold text-xl">Decoration Room</h4>
+                            <p class="text-sm">837 items</p>
+                        </div>
+                    </div>
+                    <img src="src/img/room-3.png" alt="room-3" class="w-full h-full object-cover object-center">
+                </a>
+                <!-- card-3 -->
+
+                <!-- card-4 -->
+                <a href=""
+                    class="card relative hover:shadow-lg rounded-2xl overflow-hidden col-span-9 h-44 md:h-auto md:col-span-3 md:row-span-2">
+                    <div class="overlay-room absolute inset-0 opacity-0 bg-transparent rounded-2xl"></div>
+                    <div class="absolute left-1/2 bottom-1/3 flex flex-col items-start justify-center ">
+                        <div class="text-left">
+                            <h4 class="font-semibold text-xl">Bed Room</h4>
+                            <p class="text-sm">22,094 items</p>
+                        </div>
+                    </div>
+                    <img src="src/img/room-4.png" alt="room-1" class="w-full h-full object-cover object-center">
+                </a>
+                <!-- card-4 -->
+            </div>
+        </div>
+    </section>
+    <!-- section browse the room -->
+
+    <!-- section just arrived -->
+    <section class="just-arrived pt-16 md:pt-28 min-h-screen" id="just-arrived">
+        <div class="container mx-auto px-4">
+            <div class="mb-7 md:mb-16 text-center">
+                <h2 class="font-semibold text-xl md:text-2xl capitalize">Just arrived <br>
+                    this summer for you</h2>
+            </div>
+        </div>
+
+        <div class="swiper-container mySwiper pl-5 md:pl-10">
+            <div class="swiper-wrapper flex gap-7">
+                <a href="single-page.html" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div
+                            class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
+                            <img src="src/icon/btn-arrived.svg" alt="">
+                        </div>
+                        <img src="src/img/arrived-1.png" alt="arrived-1"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="font-semibold text-xl">Cangkir Mauttie</h4>
+                        <p>IDR 89.300.000</p>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div
+                            class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
+                            <img src="src/icon/btn-arrived.svg" alt="">
+                        </div>
+                        <img src="src/img/arrived-2.png" alt="arrived-2"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="font-semibold text-xl">Bankyu Minimax</h4>
+                        <p>IDR 67.000.000</p>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div
+                            class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
+                            <img src="src/icon/btn-arrived.svg" alt="">
+                        </div>
+                        <img src="src/img/arrived-3.png" alt="arrived-3"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="font-semibold text-xl">Buku Sidu Edition</h4>
+                        <p>IDR 12.000.000</p>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div
+                            class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
+                            <img src="src/icon/btn-arrived.svg" alt="">
+                        </div>
+                        <img src="src/img/arrived-4.png" alt="arrived-4"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="font-semibold text-xl">Watch Notes X</h4>
+                        <p>IDR 73.000.000</p>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                    <div class="relative rounded-2xl overflow-hidden">
+                        <div
+                            class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
+                            <img src="src/icon/btn-arrived.svg" alt="">
+                        </div>
+                        <img src="src/img/arrived-4.png" alt="arrived-4"
+                            class="w-full h-full object-cover object-center">
+                    </div>
+                    <div class="mt-2">
+                        <h4 class="font-semibold text-xl">Racking Plants</h4>
+                        <p>IDR 2.400.000</p>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- section sponsor -->
+    <section class="px-4 py-9 md:py-16">
+        <div
+            class="container mx-auto md:max-w-5xl text-center flex flex-col md:flex-row justify-between items-center gap-16 p-0">
+            <div>
+                <img src="src/img/logo-1.png" alt="logo-1">
+            </div>
+            <div>
+                <img src="src/img/logo-2.png" alt="logo-2">
+            </div>
+            <div>
+                <img src="src/img/logo-3.png" alt="logo-3">
+            </div>
+            <div>
+                <img src="src/img/logo-4.png" alt="logo-4">
+            </div>
+        </div>
+    </section>
+    <!-- section sponsor -->
+
+
+    <footer class="border-t-2 border-gray-100 py-16">
+
+        <div class="flex text-center items-center justify-center mb-2">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="flex flex-col md:flex-row container mx-auto md:max-w-5xl md:mt-16">
+            <div class="max-w-sm mx-auto w-full accordion mt-2">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-semibold mb-2 relative">Overview</h5>
+                    <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                </div>
+                <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Shipping</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Refund</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Promotion</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-sm mx-auto w-full accordion mt-2">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-semibold mb-2 relative">Company</h5>
+                    <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                </div>
+                <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                    <li>
+                        <a href="" class="hover:underline py-2 block">About</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Career</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-sm mx-auto w-full accordion mt-2">
+                <div class="flex items-center justify-between cursor-pointer">
+                    <h5 class="text-lg font-semibold mb-2 relative">Explore</h5>
+                    <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                </div>
+                <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Terms & Conds</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="" class="hover:underline py-2 block">For Developer</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-sm mx-auto w-full accordion mt-2">
+                <h5 class="text-lg font-semibold mb-2 relative">Special Letters</h5>
+                <form action="#" class="mt-4 w-full">
+                    <div class="flex justify-between items-center bg-grayer rounded-lg overflow-hidden w-full h-11">
+                        <input type="text"
+                            class="flex-grow bg-grayer h-full pl-4 focus:outline-none text-black text-base"
+                            placeholder="Your email adress">
+                        <a href="#" class="w-11 h-11 bg-pinker flex justify-center items-center rounded-lg">
+                            <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.6177 0.374129C23.6163 0.372782 23.6152 0.371345 23.6138 0.369998C23.6124 0.36865 23.6109 0.367573 23.6095 0.366315C23.236 0.0114652 22.7002 -0.0951426 22.2098 0.0885694L0.833871 8.09569C0.268743 8.30733 -0.0623361 8.83736 0.0098048 9.41446C0.0821332 9.99159 0.53462 10.4315 1.13589 10.5092L11.5833 11.859C11.6028 11.8615 11.6185 11.8764 11.6212 11.8953L13.0301 21.9038C13.1112 22.4798 13.5704 22.9134 14.1729 22.9826C14.2279 22.9889 14.2824 22.9919 14.3364 22.9919C14.8735 22.9919 15.3486 22.6851 15.5495 22.1932L23.9077 1.7149C24.0994 1.24518 23.9882 0.731988 23.6177 0.374129ZM1.30534 9.3069C1.2819 9.30385 1.27136 9.30255 1.26728 9.27004C1.26325 9.23752 1.27319 9.23375 1.29508 9.22562L21.2946 1.73403L11.9404 10.6954C11.8794 10.6785 1.30534 9.3069 1.30534 9.3069ZM14.37 21.7514C14.3614 21.7723 14.358 21.782 14.3236 21.7779C14.2897 21.7741 14.2883 21.7639 14.2852 21.7416C14.2852 21.7416 12.8535 11.6116 12.8358 11.5532L22.19 2.59188L14.37 21.7514Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/app.js"></script>
+
+    <!-- Swiper JS -->
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // effect: "coverflow",
+            grabCursor: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 1,
+                slideShadows: true
+            },
+        });
+    </script>
+
+    <script>
+        window.onscroll = () => {
+            if (window.pageYOffset > 50) {
+                document.getElementById('top-header').classList.add('bg-white');
+                document.getElementById('top-header').classList.add('shadow-lg');
+            } else {
+                document.getElementById('top-header').classList.remove('bg-white');
+                document.getElementById('top-header').classList.remove('shadow-lg');
+            }
+        }
+
+    </script>
+
+    <script>
+        // modal-video
+        function removeModal() {
+            const modal = document.querySelector(".modal");
+            if (modal) {
+                modal.remove();
+            }
+        }
+
+        function renderModal(element) {
+            //background modal div
+            const modal = document.createElement("div");
+            modal.classList.add("modal");
+
+            //child div
+            const child = document.createElement("div");
+            child.classList.add("child");
+
+            element.classList.remove("hidden");
+            element.classList.add("flex");
+            child.appendChild(element);
+
+            modal.appendChild(child);
+            document.body.appendChild(modal);
+
+            child.addEventListener("click", (event) => {
+                removeModal();
+            });
+        }
+
+        const btnVideo = document.querySelector(".btn-play");
+        const element = document.querySelector(".modal-video");
+        btnVideo.addEventListener("click", function () {
+            renderModal(element);
+        });
+    </script>
+</body>
+
+</html>

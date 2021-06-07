@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxspace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="fixed w-full z-50 px-4 bg-white" id="top-header">
+        <div class="container mx-auto py-3 md:py-0 flex items-center">
+            <nav class="flex items-center flex-grow">
+                <div class="w-40 flex items-center ">
+                    <a href="index.html">
+                        <img src="src/img/logo.png" alt="">
+                    </a>
+                </div>
+            </nav>
+
+            <div class="w-auto">
+                <ul id="menu" class="fixed inset-0 z-50 overflow-x-hidden bg-white md:bg-transparent flex flex-col transform duration-300 md:translate-x-0 translate-x-full transition-all md:visible 
+                    md:flex-row md:relative items-center justify-center md:opacity-100">
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all menu-hover">
+                        <a href="#">Showcase</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all menu-hover">
+                        <a href="#">Catalog</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all menu-hover">
+                        <a href="#">Delivery</a>
+                    </li>
+                    <li class="my-5 md:ml-8 md:hover:text-base md:hover:text-white transition-all menu-hover">
+                        <a href="#">Rewards</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-auto">
+                <ul class="flex items-center">
+                    <li class="block md:hidden">
+                        <button id="menu-toggler" class="relative z-50 flex items-center justify-center w-10 h-10">
+                            <img src="src/icon/humberger.svg" class="button-svg" alt="">
+                        </button>
+                    </li>
+                    <li class="ml-2 md:ml-5">
+                        <a href="cart-page.html" class="flex items-center justify-center w-10 h-10">
+                            <img src="src/icon/cart.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-grayer px-4" style="padding-top: 90px; padding-bottom: 20px;">
+        <div class="container mx-auto">
+            <ul class="breadcrumb flex flex-row items-center text-lg">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Success Checkout</a></li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <section class="md:px-6 py-5 md:py-24 min-h-screen">
+        <div class="container mx-auto md:max-w-7xl">
+            <div class="flex flex-col items-center justify-center mx-6 text-center">
+                <img src="src/img/success.png" alt="success" class="w-1/2 h-1/2 md:w-1/4 md:h-1/4">
+                <h1 class="font-semibold text-xl md:text-3xl">Ah yes it’s success!</h1>
+                <p class="mt-2 md:mt-4 mb-10 md:mb-12">Furniture yang anda beli akan kami kirimkan saat ini juga <br
+                        class="md:block"> so now
+                    please sit tight and be ready for it
+                </p>
+                <a href="index.html"
+                    class="inline-block py-3 px-9 rounded-full bg-pinker text-lg font-semibold hover:text-pinker hover:bg-black transform transition-all ">Back
+                    to Shop</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section complete room-->
+
+
+    <footer class="border-t-2 border-gray-100 py-16">
+        <div class="container mx-auto">
+            <div class="flex text-center items-center justify-center mb-2">
+                <img src="src/img/logo.png" alt="">
+            </div>
+            <div class="flex flex-col md:flex-row container mx-auto md:max-w-5xl md:mt-16">
+                <div class="max-w-sm mx-auto w-full accordion mt-2">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-lg font-semibold mb-2 relative">Overview</h5>
+                        <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                    </div>
+                    <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Refund</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Promotion</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-w-sm mx-auto w-full accordion mt-2">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-lg font-semibold mb-2 relative">Company</h5>
+                        <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                    </div>
+                    <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                        <li>
+                            <a href="" class="hover:underline py-2 block">About</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Career</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-w-sm mx-auto w-full accordion mt-2">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <h5 class="text-lg font-semibold mb-2 relative">Explore</h5>
+                        <i class="bi bi-chevron-down btn-dropdown block md:hidden transition duration-300"></i>
+                    </div>
+                    <ul class="h-0 md:h-auto relative overflow-hidden menu-dropdown transition duration-300">
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Terms & Conds</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="" class="hover:underline py-2 block">For Developer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-w-sm mx-auto w-full accordion mt-2">
+                    <h5 class="text-lg font-semibold mb-2 relative">Special Letters</h5>
+                    <form action="#" class="mt-4 w-full">
+                        <div class="flex justify-between items-center bg-grayer rounded-lg overflow-hidden w-full h-11">
+                            <input type="text"
+                                class="flex-grow bg-grayer h-full pl-4 focus:outline-none text-black text-base"
+                                placeholder="Your email adress">
+                            <a href="#" class="w-11 h-11 bg-pinker flex justify-center items-center rounded-lg">
+                                <svg width="24" height="23" viewBox="0 0 24 23" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M23.6177 0.374129C23.6163 0.372782 23.6152 0.371345 23.6138 0.369998C23.6124 0.36865 23.6109 0.367573 23.6095 0.366315C23.236 0.0114652 22.7002 -0.0951426 22.2098 0.0885694L0.833871 8.09569C0.268743 8.30733 -0.0623361 8.83736 0.0098048 9.41446C0.0821332 9.99159 0.53462 10.4315 1.13589 10.5092L11.5833 11.859C11.6028 11.8615 11.6185 11.8764 11.6212 11.8953L13.0301 21.9038C13.1112 22.4798 13.5704 22.9134 14.1729 22.9826C14.2279 22.9889 14.2824 22.9919 14.3364 22.9919C14.8735 22.9919 15.3486 22.6851 15.5495 22.1932L23.9077 1.7149C24.0994 1.24518 23.9882 0.731988 23.6177 0.374129ZM1.30534 9.3069C1.2819 9.30385 1.27136 9.30255 1.26728 9.27004C1.26325 9.23752 1.27319 9.23375 1.29508 9.22562L21.2946 1.73403L11.9404 10.6954C11.8794 10.6785 1.30534 9.3069 1.30534 9.3069ZM14.37 21.7514C14.3614 21.7723 14.358 21.782 14.3236 21.7779C14.2897 21.7741 14.2883 21.7639 14.2852 21.7416C14.2852 21.7416 12.8535 11.6116 12.8358 11.5532L22.19 2.59188L14.37 21.7514Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>

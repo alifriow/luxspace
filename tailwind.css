@@ -31,7 +31,7 @@
     @apply bg-black opacity-30 transform transition-all duration-150;
   }
   .hero-image img {
-    min-height: 90vh;
+    min-height: 87vh;
   }
   .section-hero .hero-text {
     width: 100vw;

@@ -63,12 +63,12 @@
     <!-- section hero -->
     <section class="section-hero grid md:grid-cols-2 w-full overflow x-hidden">
         <div
-            class="hero-text absolute z-20 md:relative h-full py-8 md:max-w-md mx-auto flex flex-col items-center justify-center text-center ">
+            class="hero-text absolute z-20 md:relative h-full py-8 md:max-w-md mx-auto flex flex-col items-center justify-center text-center px-3 md:px-0">
             <h1 class="text-4xl font-semibold">The Room <br> You’ve Dreaming</h1>
             <p class="text-lg mt-5">Kami menyediakan furniture berkelas yang <br class="block">
                 membuat ruangan terasa homey</p>
             <a href="#browse-room"
-                class="mt-7 inline-block py-3 px-9 rounded-full bg-pinker text-lg font-semibold hover:text-pinker hover:bg-black transform transition-all">Explore
+                class="mt-7 inline-block py-3 px-9 rounded-full bg-pinker text-lg font-semibold hover:text-pinker focus:outline-none hover:bg-black transform transition-all">Explore
                 Now</a>
         </div>
         <div class="hero-image relative cursor-pointer">
@@ -171,7 +171,8 @@
 
         <div class="swiper-container mySwiper pl-5 md:pl-10">
             <div class="swiper-wrapper flex gap-7">
-                <a href="single-page.html" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                <a href="single-page.html" class="swiper-slide bg-white focus:outline-none"
+                    style="width: 287px;height: 468px;">
                     <div class="relative rounded-2xl overflow-hidden">
                         <div
                             class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
@@ -186,7 +187,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                <a href="#" class="swiper-slide bg-white focus:outline-none" style="width: 287px;height: 468px;">
                     <div class="relative rounded-2xl overflow-hidden">
                         <div
                             class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
@@ -201,7 +202,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                <a href="#" class="swiper-slide bg-white focus:outline-none" style="width: 287px;height: 468px;">
                     <div class="relative rounded-2xl overflow-hidden">
                         <div
                             class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
@@ -216,7 +217,7 @@
                     </div>
                 </a>
 
-                <a href="#" class="swiper-slide bg-white" style="width: 287px;height: 468px;">
+                <a href="#" class="swiper-slide bg-white focus:outline-none" style="width: 287px;height: 468px;">
                     <div class="relative rounded-2xl overflow-hidden">
                         <div
                             class="overlay-swipper absolute inset-0 z-30 flex justify-center items-center opacity-0 bg-black hover:opacity-100 transition duration-200 bg-opacity-50">
@@ -271,7 +272,7 @@
     <!-- section sponsor -->
 
 
-    <footer class="border-t-2 border-gray-100 py-16">
+    <footer class="border-t-2 border-gray-100 py-16 px-4 md:px-5">
 
         <div class="flex text-center items-center justify-center mb-2">
             <img src="src/img/logo.png" alt="">
@@ -366,6 +367,7 @@
                 stretch: 0,
                 depth: 0,
                 modifier: 1,
+                centerMode: true,
                 slideShadows: true
             },
         });
